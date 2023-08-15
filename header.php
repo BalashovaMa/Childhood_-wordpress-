@@ -34,20 +34,19 @@
                     <div class="col-md-12 col-lg-9 offset-lg-0 col-xl-7 offset-xl-2 ">
                         <div class="header__contacts">
                             <div class="header__contacts-item">
-                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/email.svg" alt="почта" class="header__contacts-logo">
-                                <a href="mailto:mirdetstva@gmail.com" class="header__contacts-mail">mirdetstva@gmail.com</a>
+                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/email.svg" alt="mail" class="header__contacts-logo">
+                                <a href="mailto:<?php the_field('mail', 2) ?>" class="header__contacts-mail"><?php the_field('mail', 2) ?></a>
                             </div>
                             <div class="header__contacts-item">
-                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="телефон" class="header__contacts-logo">
+                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="phone" class="header__contacts-logo">
                                 <div class="header__contacts-tel">
-                                    <a href="tel:+797867834347">+797867834347</a>
-                                    <a href="tel:+797867834358">+797867834358</a>
+                                    <a href="tel:<?php the_field('phone_1', 2) ?>"><?php the_field('phone_1', 2) ?></a>
+                                    <a href="tel:<?php the_field('phone_2', 2) ?>"><?php the_field('phone_2', 2) ?></a>
                                 </div>
                             </div>
                             <div class="header__contacts-item">
-                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/pointer.svg" alt="указатель" class="header__contacts-logo">
-                                <address>ул. Василисы Кожиной, 1<br>
-                                    Москва, Россия, 121096</address>
+                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/pointer.svg" alt="pointer" class="header__contacts-logo">
+                                <address><?php the_field('address', 2) ?></address>
                             </div>
                         </div>
                     </div>
@@ -55,19 +54,19 @@
                 <nav class="row" data-slide="1">
                     <ul class="header__nav">
                         <li>
-                            <a class="header__nav-item" href="#about">Про компанию</a>
+                            <a class="header__nav-item" href="#about">About company</a>
                         </li>
                         <li>
-                            <a class="header__nav-item" href="#specialists">Наша команда</a>
+                            <a class="header__nav-item" href="#specialists">Our team</a>
                         </li>
                         <li>
-                            <a class="header__nav-item" href="#toys">Игрушки</a>
+                            <a class="header__nav-item" href="#toys">Toys</a>
                         </li>
                         <li>
-                            <a class="header__nav-item" href="#aboutus">Наша история</a>
+                            <a class="header__nav-item" href="#aboutus">Our history</a>
                         </li>
                         <li>
-                            <a class="header__nav-item" href="#contacts">Контакты и отзывы</a>
+                            <a class="header__nav-item" href="#contacts">Contacts and feedback</a>
                         </li>
                     </ul>
                 </nav>
