@@ -280,7 +280,7 @@
         </div>
 
         <div class="contacts" id="contacts">
-            <h1 class="title">Где нас найти</h1>
+            <h1 class="title">where to find us</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -289,13 +289,14 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div id="map" class="contacts__map">
+                        <div class="contacts__map">
+                            <?php the_field('map'); ?>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="title contacts__minititle">Свяжитесь с нами</div>
+                        <div class="title contacts__minititle">Contact us</div>
                         <div class="contacts__info">
                             <div class="contacts__phones">
                                 <div class="contacts__phoneblock">
@@ -406,7 +407,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="title contacts__minititle">Оставьте ваш отзыв</div>
+                        <div class="title contacts__minititle">Give us your feedback</div>
                         <form action="#" class="contacts__feed">
                             <label for="feedname">
                                 Ваше имя <span>*</span>
