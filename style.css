@@ -1959,7 +1959,7 @@ footer {
     position: relative;
     margin: 70px auto 0;
     width: 575px;
-    height: 480px;
+    height: 650px;
     overflow: auto;
     padding: 20px 40px;
     background: #fff;
@@ -2028,6 +2028,7 @@ footer {
     font-size: 25px;
     cursor: pointer;
 }
+
 .title {
     font-size: 30px;
     color: #3f3689;
